@@ -28,12 +28,12 @@
     "yilia-plus"
   ],
   "author": {
-    "name": "JoeyBling",
-    "email": "2434387555@qq.com",
-    "url": "https://zhousiwei.gitee.io"
+    "name": "backspace2019",
+    "email": "1084355128@qq.com",
+    "url": "https://backspace2019.github.io"
   },
   "license": "MIT",
-  "homepage": "https://github.com/JoeyBling/hexo-theme-yilia-plus",
+  "homepage": "https://github.com/backspace2019/backspace2019.GitHub.io",
   "devDependencies": {
     "autoprefixer": "^6.5.1",
     "clean-webpack-plugin": "^0.1.15",
