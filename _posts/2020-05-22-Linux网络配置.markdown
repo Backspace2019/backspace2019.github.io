@@ -1,0 +1,110 @@
+---
+layout:     post
+title:      "[Linux]网络用户配置"
+subtitle:   "CentOS6.8"
+date:       2020-05-21 10:50:00
+author:     "Backspace"
+header-img: "img/post-bg-apple-event-2015.jpg"
+tags:
+    - Linux
+---
+
+本文默认使用Linux的root用户进行编辑
+
+### 修改IP地址
+
+1.打开ip地址文件`vim /etc/sysconfig/network-scripts/ifcfg-eth0`
+
+2.修改文件
+
+```shell
+DEVICE=eth0        #接口名（设备,网卡）
+HWADDR=00:0C:2x:6x:0x:xx  #MAC地址 
+TYPE=Ethernet        #网络类型（通常是Ethemet）
+UUID=926a57ba-92c6-4231-bacb-f27e5e6a9f44 #随机id
+\#系统启动的时候网络接口是否有效（yes/no）
+ONBOOT=yes        
+\# IP的配置方法[none|static|bootp|dhcp]（引导时不使用协议|静态分配IP|BOOTP协议|DHCP协议）
+BOOTPROTO=static   
+\#IP地址
+IPADDR=192.168.1.101  
+\#网关 
+GATEWAY=192.168.1.2   
+\#域名解析器
+DNS1=192.168.1.2
+```
+
+### 关闭防火墙
+
+1.查看防火墙服务状态`chkconfig iptables --list`
+
+2.关闭防火墙 `chkconfig iptables off`，这样关闭可以将防火墙永久关闭
+
+3.临时关闭防火墙 `service iptables off`
+
+### 修改主机名
+
+1.打开指定文件`vim /etc/sysconfig/network`
+
+2.修改文件
+
+```shell
+NETWORKING=yes
+NETWORKING_IPV6=no
+HOSTNAME= hadoop100
+#注意：主机名称不要有“_”下划线
+```
+
+### 修改主机映射
+
+1.打开hosts文件`vim /etc/hosts`
+
+2.在文件最后添加内容
+
+```shell
+192.168.1.102 hadoop102
+192.168.1.103 hadoop103
+192.168.1.104 hadoop104
+```
+
+### 用户管理命令
+
+1.创建用户 `useradd 用户名`
+
+1.1创建用户到指定的组 `useradd -g 组名 用户名`
+
+2.删除用户 `userdel 用户名`
+
+3.修改用户密码 `passwd 用户名`
+
+4.给用户管理员权限
+
+​	a.打开指定文件`vim  /etc/sudoers`
+
+​	b.修改文件内容，第91行
+
+```shell
+## Allow root to run any commands anywhere
+root   ALL=(ALL)   ALL
+atguigu  ALL=(ALL)   NOPASSWD:ALL
+```
+
+5.查看用户是否存在 `id 用户名`
+
+6.查看创建了哪些用户 `cat /etc/passwd`
+
+7.切换用户 `su 用户名`，只切换用户不获得环境变量；`su - 用户名`，切换用户并获得环境变量
+
+8.修改用户 `usermod 用户名`
+
+9.查看登录用户信息`whoami`，显示自身用户名称；`who am i`显示登录用户的用户名
+
+### 组管理命令
+
+1.创建组 `groupadd 组名`
+
+2.删除组 `groupdel 组名`
+
+3.修改组 `goupmod 组名`
+
+4.查看所有组 `cat /etc/group`
