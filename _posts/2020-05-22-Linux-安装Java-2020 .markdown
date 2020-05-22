@@ -11,6 +11,8 @@ tags:
 	- Java
 ---
 
+# [Linux]安装Java运行环境
+
 ### 解压JDK安装包
 
 1.使用xftp连接Linux，将JDK的安装包上传到`/opt/software`文件夹下
