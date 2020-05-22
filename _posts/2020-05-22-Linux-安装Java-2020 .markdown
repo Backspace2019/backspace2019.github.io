@@ -1,0 +1,46 @@
+---
+layout:     post
+title:      "[Linux]安装Java运行环境"
+subtitle:   "JDK1.8.0_144"
+date:       2020-05-22 10:50:00
+author:     "Backspace"
+header-img: "img/post-bg-apple-event-2015.jpg"
+tags:
+    - 大数据
+    - Linux
+	- Java
+---
+
+### 解压JDK安装包
+
+1.使用xftp连接Linux，将JDK的安装包上传到`/opt/software`文件夹下
+
+2.使用xshell连接Linux[非root用户]，`cd /opt/sofware`来到software目录
+
+3.解压安装包到/opt/module目录下 `tar -zxvf jdk1.8.0_144.tar.gz -C /opt/module`
+
+### 配置环境变量
+
+**方法①**
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+**方法②**
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
