@@ -5,7 +5,6 @@ subtitle: 'JDK1.8.0_144'
 date: 2020-05-22 10:50:00
 author: "Backspace"
 header-img: "img/post-bg-apple-event-2015.jpg"
-header type：text
 tags:
   - Linux
   - Java

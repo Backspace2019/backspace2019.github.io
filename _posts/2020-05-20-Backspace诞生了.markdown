@@ -5,7 +5,6 @@ subtitle:   "因为热爱，为爱而生"
 date:       2020-05-20 00:00:00
 author:     "Backspace"
 header-img: "img/post-bg-apple-event-2015.jpg"
-header type：text
 tags:
     - 大数据
     - Linux
