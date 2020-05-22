@@ -2,9 +2,9 @@
 layout: post
 title: "[Linux] 安装Java运行环境"
 subtitle: 'JDK1.8.0_144'
+date: 2020-05-21 10:50:00
 author: "Backspace"
 header-img: "img/post-bg-apple-event-2015.jpg"
-header-style: text
 tags:
   - Linux
   - Java
