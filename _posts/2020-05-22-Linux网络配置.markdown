@@ -24,7 +24,8 @@ TYPE=Ethernet        #网络类型（通常是Ethemet）
 UUID=926a57ba-92c6-4231-bacb-f27e5e6a9f44 #随机id
 \#系统启动的时候网络接口是否有效（yes/no）
 ONBOOT=yes        
-\# IP的配置方法[none|static|bootp|dhcp]（引导时不使用协议|静态分配IP|BOOTP协议|DHCP协议）
+\# IP的配置方法[none|static|bootp|dhcp]
+（引导时不使用协议|静态分配IP|BOOTP协议|DHCP协议）
 BOOTPROTO=static   
 \#IP地址
 IPADDR=192.168.1.101  
