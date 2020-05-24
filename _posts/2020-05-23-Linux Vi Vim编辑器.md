@@ -7,6 +7,7 @@ author:     "Backspace"
 header-img: "img/post-bg-apple-event-2015.jpg"
 tags:
     - Linux
+    - Vim
 ---
 
 Vi/Vim编辑器是我在Linux系统中常用的文件编辑器。Vim与Vi编辑器是完全兼容的，并且是在Vi编辑器的基础上进化来的，可以主动的以字体颜色来辨别语法的正确性。
