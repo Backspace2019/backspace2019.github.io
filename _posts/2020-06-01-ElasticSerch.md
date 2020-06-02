@@ -1,10 +1,4 @@
-#                              ------------Elastic Search------------
-
-
-
-
-
-## 概述ElasticSearch
+## ElasticSearch概述
 
 ### 零、全文搜索、倒排索引和Luncene
 
