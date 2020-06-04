@@ -23,6 +23,22 @@ tags:
     - Jekyll
     - Vim
     - shell
+    - TouchDesigner
+    - Three.js
+    - Processing
+    - GLSL
+    - Shader
+    - Unity
+    - 前端三剑客
+    - Python
+    - OpenGL
+    - AE表达式
+    - C4D
+    - Blender
+    - 新媒体
+    - 创意编程
+    - 大思考
+    - 开发
 ---
 
 2020年5月20号，于上海。
