@@ -5,6 +5,7 @@ subtitle:   "SpringBoot-2.2.2.RELEASE"
 date:       2020-05-21 10:50:00
 author:     "Backspace"
 header-img: "img/post-bg-apple-event-2015.jpg"
+catalog:      true
 tags:
     - Spring
     - SpringBoot

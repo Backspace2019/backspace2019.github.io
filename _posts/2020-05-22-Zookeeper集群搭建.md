@@ -5,6 +5,7 @@ subtitle: 'Hadoop2.7.2'
 date: 2020-05-22 11:11:00
 author: "Backspace"
 header-img: "img/post-bg-apple-event-2015.jpg"
+catalog:      true
 tags:
   - Hadoop
 ---
